@@ -1,0 +1,10 @@
+language: node_js
+node_js: 
+  - "stable"
+before_script:
+  - cd ./demo && npm install
+  - cd ./EmployeeApp && npm i
+  - cd ..
+script:
+  - npm run build
+  - npm run build-angular
