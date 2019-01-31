@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "ng": "ng",
-    "build": "cd ./EmployeeApp && ng build && cd.. && tsc index.ts && node index.js"
+    "build":" tsc index.ts",
+    "build-angular":"cd ./EmployeeApp && ng build",
+    "build-prod": "cd ./EmployeeApp && ng build && cd.. && tsc index.ts && node index.js"
   },
   "keywords": [],
   "author": "",
