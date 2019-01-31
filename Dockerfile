@@ -1,4 +1,4 @@
-FROM node:11.9.0
+FROM node:stable
 
 # install dependencies
 WORKDIR /nodejsandangularcrudoperation/demo
