@@ -2,6 +2,7 @@ FROM node:8.11.3
 
 # install dependencies
 WORKDIR /nodejsandangularcrudoperation/demo
+ls -a
 COPY package.json package-lock.json* ./
 RUN npm cache clean --force && npm install && cd EmployeeApp && npm install && cd ..
 
