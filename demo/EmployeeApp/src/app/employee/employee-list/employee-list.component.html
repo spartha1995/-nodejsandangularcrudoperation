@@ -1,0 +1,27 @@
+<html>
+<body >
+<div class= "container-fluid" >
+    <h3 *ngIf="employeeList.length == 0 ">No Employees Found</h3>
+    <table *ngIf="employeeList.length > 0" class="table table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Update Button</th>
+        <th>Delete Button</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employeeList">
+            <td>{{employee.firstname}}</td>
+            <td>{{employee.lastname}}</td>
+            <td>{{employee.email}}</td>
+            <td><button type="button" class="btn btn-warning" (click)="UpdateEmployee(employee.id)">Update</button></td>
+            <td><button type="button" class="btn btn-danger" (click)="deleteEmployee(employee.id)">Delete</button></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
