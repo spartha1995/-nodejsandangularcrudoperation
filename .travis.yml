@@ -8,3 +8,4 @@ before_script:
 script:
   - npm run build
   - npm run build-angular
+  - chmod +x deploy.sh && bash deploy.sh
