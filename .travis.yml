@@ -4,6 +4,7 @@ node_js:
 before_script:
   - npm install
   - cd ./demo/EmployeeApp && npm i
+  - cd..
 script:
   - npm run build
   - npm run build-angular
