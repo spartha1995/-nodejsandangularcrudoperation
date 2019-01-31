@@ -3,7 +3,7 @@ node_js:
   - "stable"
 before_script:
   - cd ./demo && npm install
-  - cd ./demo/EmployeeApp && npm i
+  - cd ./EmployeeApp && npm i
   - cd ..
 script:
   - npm run build
